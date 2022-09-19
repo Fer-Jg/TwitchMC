@@ -5,8 +5,8 @@ apply plugin: 'java'
 group = 'com.github.twitch4j'
 version = '1.0.0'
 
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
+sourceCompatibility = '17'
+targetCompatibility = '17'
 
 // Repositories
 repositories {
@@ -27,6 +27,8 @@ dependencies {
 
 	// Logging
 	implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.11'
+	
+  	implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.0'
 }
 
 // Ensure plugin.yml has the version defined here
