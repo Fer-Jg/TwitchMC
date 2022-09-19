@@ -1,8 +1,6 @@
 package me.ferjgu.utils.command;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -15,10 +13,10 @@ import me.ferjgu.utils.Utils;
 
 public class CommandBuilder implements CommandExecutor {
 	
-	private Main plugin;
-	private HashMap<String, SubCommandBuilder> subcommands;
-	private List<HashMap<String, SubCommandBuilder>> commandTree;
-	private PluginCommand thisCommand;
+	protected Main plugin;
+	protected PluginCommand thisCommand;
+	public HashMap<String, SubCommandBuilder> subcommands;
+	
 	public CommandBuilder(Main instance, String commandName) {
 		this.plugin = instance;
 		this.thisCommand = this.plugin.getCommand(commandName);
