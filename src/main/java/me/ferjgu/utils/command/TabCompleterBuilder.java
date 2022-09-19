@@ -1,6 +1,7 @@
-package me.ferjgu.utils;
+package me.ferjgu.utils.command;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
@@ -13,10 +14,10 @@ import org.bukkit.command.TabCompleter;
 public class TabCompleterBuilder implements TabCompleter {
 	
 	private List<Set<String>> positionArgs;
-	@SafeVarargs
-	public TabCompleterBuilder(@Nonnull Set<String>... options) {
-		this.positionArgs = new ArrayList<Set<String>>();
-		for(Set<String> position : options)	this.positionArgs.add(position);
+	
+	public TabCompleterBuilder(@Nonnull CommandBuilder builder) {
+		int index = 0;
+		this.positionArgs.add(index, builder.getSubcommands().keySet());
 	}
 
 	public List<String> onTabComplete(CommandSender sender, Command cmd, String label, String[] args) {
