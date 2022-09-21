@@ -9,7 +9,7 @@ import me.ferjgu.TwitchMC.Main;
 import me.ferjgu.utils.Utils;
 import me.ferjgu.utils.configs.CustomConfig;
 
-public class IncidentLog {
+public class PluginEventsLogger {
 	
 	private Main plugin;
 	private String logType;
@@ -17,7 +17,7 @@ public class IncidentLog {
 	private List<String> logs;
 	
 	@SuppressWarnings("unchecked")
-	public IncidentLog(Main instance, String logTypeFormat) {
+	public PluginEventsLogger(Main instance, String logTypeFormat) {
 		this.plugin = instance;
 		this.logType = logTypeFormat;
 		this.configFile = new CustomConfig(instance, "Logs/"+logTypeFormat+"-" + Utils.getCurrentDate(true));
