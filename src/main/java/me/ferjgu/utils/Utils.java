@@ -25,13 +25,13 @@ public class Utils {
 	}
 
 	public static void LogInfo(String str) {
-		Bukkit.getLogger().info(prefixColor("&b[INFO] " + str));
-		//Bukkit.getConsoleSender().sendMessage(prefixColor("&b[INFO] " + str));
+//		Bukkit.getLogger().info(prefixColor("&b[INFO] " + str));
+		Bukkit.getConsoleSender().sendMessage(prefixColor("&b[INFO] " + str));
 	}
 
 	public static void LogGood(String str) {
-		Bukkit.getLogger().fine(prefixColor("&a[OK] " + str));
-		//Bukkit.getConsoleSender().sendMessage(prefixColor("&a[OK] " + str));
+//		Bukkit.getLogger().fine(prefixColor("&a[OK] " + str));
+		Bukkit.getConsoleSender().sendMessage(prefixColor("&a[OK] " + str));
 	}
 
 	public static void LogWarn(String str) {
