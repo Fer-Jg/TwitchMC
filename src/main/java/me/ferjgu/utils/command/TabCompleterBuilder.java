@@ -1,7 +1,6 @@
 package me.ferjgu.utils.command;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
@@ -17,6 +16,7 @@ public class TabCompleterBuilder implements TabCompleter {
 	
 	public TabCompleterBuilder(@Nonnull CommandBuilder builder) {
 		int index = 0;
+		this.positionArgs = new ArrayList<Set<String>>();
 		this.positionArgs.add(index, builder.getSubcommands().keySet());
 	}
 
