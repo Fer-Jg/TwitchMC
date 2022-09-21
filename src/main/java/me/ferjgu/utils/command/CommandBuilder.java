@@ -30,6 +30,7 @@ public class CommandBuilder implements CommandExecutor {
 		if(this.subcommands != null) {
 			if(this.subcommands.keySet().contains(args[0].toLowerCase())) {
 				this.subcommands.get(args[0].toLowerCase()).onCommand(sender, command, args);
+				return true;
 			} else {
 				sender.sendMessage(Utils.color("&cInvalid subcommand."));
 				return false;
