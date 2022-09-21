@@ -16,3 +16,9 @@ A plugin for Twitch utils in spigot
 * Streamer<->viewer interaction commands (+ cooldowns).
 * Server-related streamer stats.
 * idk, I guess more if this gets good enough :)
+
+---
+### Possible features
+* Discord integration
+  * Discord<->Twitch chat
+  * Discord commands (streamer/viewer/channel stats, viewer interactions, etc.)
