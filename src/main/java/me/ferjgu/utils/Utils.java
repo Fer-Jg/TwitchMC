@@ -40,7 +40,7 @@ public class Utils {
 	}
 	
 	public static Player getOnlinePlayer(OfflinePlayer player) throws PlayerOfflineException {
-		if(player.isOnline()) return (Player) player;
+		if(player.isOnline()) return player.getPlayer();
 		throw new PlayerOfflineException(player);
 	}
 	
