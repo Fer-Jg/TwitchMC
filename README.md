@@ -1,6 +1,15 @@
 # TwitchMC
+
 A plugin for Twitch utils in spigot
 
+Support: [![Discord Server](https://discordapp.com/api/guilds/663175330512764948/embed.png?style=banner2)](https://discord.gg/RpyTXgQhru)
+
+Important:
+
+To obtain a `clientID` and `clientSecret` to populate in `config.yml`, you can create an app [here](https://dev.twitch.tv/console/apps/create).
+Alternatively, you can provide `oauthToken`, which can be generated [here](https://www.twitchtokengenerator.com/) if you do not wish to host the authentication process yourself.
+At least one of these must be provided to interact with the Helix API, which is used to track follows and stream state.
+To read chat, no token is necessary, but in order to send messages to chat, an `oauth_token` with the `chat:edit` scope *is*.
 
 ---
 ## Features
