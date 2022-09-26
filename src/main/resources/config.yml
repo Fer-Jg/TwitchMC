@@ -1,0 +1,34 @@
+# Information from your bot
+clientID: 'YoUrCliEnT_ID99999'
+clientSecret: '**SECRET**'
+oauthToken: 'yOUrTOKeN_00000'
+
+serverChannel: "Minecraft_TV"
+
+# Keywords/phrases that the stream title MUST contain in order to be broadcasted 
+streamTitleMustContain:
+  - "server_name"
+  - "play"
+
+
+# Information from each streamer allowed in the server
+streamers:
+  1:
+    # IN-GAME name from the player
+    user: "in_game_name1"
+    # Player's twitch channel
+    channel: "channel1"
+    # {player} = player's name | {link} = twitch.tv/channel
+    liveMessage: "&9{streamer} &bis live! go watch them on &5{link}"
+    # The live message will be broadcasted 5 a total of times
+    messageRepetition: 5
+    # Time between each broadcast (in seconds)
+    repeatDelay: 300
+    ## Future implementations ##
+#    chatPrize: "/money give {player} 5"
+#    followPrize: "/money give {player} 10"
+#    subPrize: "/give {player} 64 diamond"
+  2:
+    user: "in_game_name2"
+    channel: "channel2"
+    liveMessage: "&9{streamer} &bis live! go watch them on &5{link}"

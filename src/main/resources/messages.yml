@@ -1,0 +1,12 @@
+# Commented lines are for planned and/or possible features (https://github.com/Fer-Jg/TwitchMC#planned-features)
+
+chatFormat: "&5&l[&5Twitch&5&l] &d{user}: &8{message}"
+nowOnline: "&aDone! Now you are online and you will be able to read your stream's messages in minecraft until you disconnect from the server (or use /stream off)."
+alreadyOnline: "&cYou are already &lonline&c, it is not needed to perform this command again."
+nowOffline: "&aDone! Now you are offline and won't receive any more stream messages."
+alreadyOffline: "&cYou are already &loffline&c, it is not needed to perform this command again."
+notStreamer: "&cSorry, you are not a registered streamer, if you think this is an error please report it to a admin."
+#new_follower: "{user} is a new follower!"
+#received_cheer: "{user} cheered x{bits}"
+#new_sub: "{user} just subbed!"
+#new_gifted_subs: "{user} just gifted x{gifted} subs!"

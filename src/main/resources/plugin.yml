@@ -1,0 +1,49 @@
+name: TwitchMC
+version: "@version@"
+main: me.ferjgu.TwitchMC.Main
+description: "An awesome plugin to get Twitch and Minecraft together ♥"
+authors: [FERJGU, FERJGU, FERJGU]
+website: "https://discord.gg/RpyTXgQhru"
+api-version: 1.18
+prefix: TwitchMC
+
+commands:
+  twitchmc:
+    description: "Plugin's core command."
+    usage: "/<command> <reload/config>"
+    permission: "twitchmc.command.core"
+    aliases: ["tmc"]
+  stream:
+    description: "Manage your stream."
+    usage: "/<command> <live/off>"
+    permission: "twitchmc.command.streamer"
+    
+permissions:
+  twitchmc.command.core.config:
+    default: false
+  twitchmc.command.core.reload:
+    default: false
+  twitchmc.command.core.*:
+    default: false
+    children:
+      twitchmc.command.core.reload: true
+      twitchmc.command.core.config: true
+      
+  twitchmc.admin:
+    children:
+      twitchmc.command.core.*: true
+      
+  twitchmc.command.streamer.stream:
+    default: false
+  twitchmc.command.streamer.*:
+    default: false
+    children:
+      twitchmc.command.streamer.stream: true
+      
+  twitchmc.streamer.*:
+    children:
+      twitchmc.command.streamer.*: true
+  twitchmc.*:
+    children:
+      twitchmc.streamer.*: true
+      twitchmc.admin: true
