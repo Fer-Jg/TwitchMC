@@ -11,6 +11,8 @@ Alternatively, you can provide `oauthToken`, which can be generated [here](https
 At least one of these must be provided to interact with the Helix API, which is used to track follows and stream state.
 To read chat, no token is necessary, but in order to send messages to chat, an `oauth_token` with the `chat:edit` scope *is*.
 
+Looking for more info? [visit the wiki](https://github.com/Fer-Jg/TwitchMC/wiki)!
+
 ---
 ## Features
 * Send real time twitch messages in minecraft to the streamer.
