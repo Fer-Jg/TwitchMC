@@ -32,3 +32,5 @@ streamers:
     user: "in_game_name2"
     channel: "channel2"
     liveMessage: "&9{streamer} &bis live! go watch them on &5{link}"
+    messageRepetition: 5
+    repeatDelay: 300
